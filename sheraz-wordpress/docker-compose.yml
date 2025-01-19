@@ -31,7 +31,7 @@ services:
       - sheraz_db
     image: wordpress:latest
     ports:
-      - "8000:80"
+      - "8060:80"
     restart: always
     volumes:
       - type: bind

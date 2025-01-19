@@ -29,3 +29,16 @@ update-alternatives --install /usr/bin/java java /opt/jdk-23.0.1/bin/java 100
 update-alternatives --install /usr/bin/javac javac /opt/jdk-23.0.1/bin/javac 100
 update-alternatives --display java
 update-alternatives --display javac
+
+
+#############
+# install wordpress
+#############
+
+# Copy private key id_rsa in /root/.ssh
+mkdir -p /opt/sheraz-wordpress/mysql-data
+mkdir -p /opt/sheraz-wordpress/html
+cd /opt/dev
+git clone git@github.com:sherazc/sandbox-test.git
+cd ./sandbox-test/sheraz-wordpress/
+docker-compose up -d
