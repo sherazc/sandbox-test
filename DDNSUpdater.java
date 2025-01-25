@@ -3,6 +3,11 @@ import java.net.*;
 import java.util.regex.*;
 import org.json.*;
 
+/**
+ * Converted this bash script https://github.com/K0p1-Git/cloudflare-ddns-updater/blob/main/cloudflare-template.sh 
+ * to java
+ */
+
 public class DDNSUpdater {
     private static final String AUTH_EMAIL = "";
     private static final String AUTH_METHOD = "token";
